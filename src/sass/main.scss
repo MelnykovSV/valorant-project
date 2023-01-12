@@ -1,0 +1,12 @@
+@import './utils/normalize';
+@import './utils/fonts';
+@import './utils/vars';
+@import './utils/mixines';
+@import './utils/normalize';
+
+.button {
+  @include button(black, none, var(--red));
+  text-decoration: none;
+  margin-left: 200px;
+  display: block;
+}
