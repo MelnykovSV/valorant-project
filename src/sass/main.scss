@@ -3,10 +3,12 @@
 @import './utils/vars';
 @import './utils/mixines';
 @import './utils/normalize';
+@import './utils/common';
 
-.button {
-  @include button(black, none, var(--red));
-  text-decoration: none;
-  margin-left: 200px;
-  display: block;
-}
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/agents';
+@import './components/maps';
+@import './components/guns';
+@import './components/footer';

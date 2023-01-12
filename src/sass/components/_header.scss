@@ -1,0 +1,31 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header-container {
+  padding-left: 30px;
+  padding-right: 11px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__icon-container {
+}
+.header__logo {
+  fill: var(--red);
+  margin: 0 auto;
+}
+.header__logo-text {
+  text-transform: uppercase;
+  font-family: 'VALORANT';
+  font-size: 5.6px;
+  margin: 0;
+  color: var(--red);
+  margin: 0 auto;
+}
+.header__menu-icon-container {
+}
+.header__menu-icon {
+  fill: var(--red);
+}
