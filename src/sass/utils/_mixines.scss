@@ -1,4 +1,4 @@
-@mixin button($col, $bgcol) {
+@mixin button($col, $bgcol, $bordcol) {
   text-align: center;
   cursor: pointer;
   font-family: 'VALORANT';
@@ -6,4 +6,32 @@
   padding: 19px 37px;
   background-color: $bgcol;
   color: $col;
+  position: relative;
+  max-width: 500px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 45.3947%;
+    height: calc(100% + 8px);
+    left: -4px;
+    top: -4px;
+
+    border-left: solid $bordcol 2px;
+    border-top: solid $bordcol 2px;
+    border-bottom: solid $bordcol 2px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 45.3947%;
+    height: calc(100% + 8px);
+    right: -4px;
+    top: -4px;
+
+    border-right: solid $bordcol 2px;
+    border-top: solid $bordcol 2px;
+    border-bottom: solid $bordcol 2px;
+  }
 }

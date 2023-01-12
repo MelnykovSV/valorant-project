@@ -5,6 +5,8 @@
 @import './utils/normalize';
 
 .button {
-  @include button(black, red);
+  @include button(black, none, var(--red));
   text-decoration: none;
+  margin-left: 200px;
+  display: block;
 }
