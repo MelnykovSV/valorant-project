@@ -1,0 +1,9 @@
+@mixin button($col, $bgcol) {
+  text-align: center;
+  cursor: pointer;
+  font-family: 'VALORANT';
+  text-transform: uppercase;
+  padding: 19px 37px;
+  background-color: $bgcol;
+  color: $col;
+}

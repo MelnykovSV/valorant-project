@@ -3,3 +3,8 @@
 @import './utils/vars';
 @import './utils/mixines';
 @import './utils/normalize';
+
+.button {
+  @include button(black, red);
+  text-decoration: none;
+}
