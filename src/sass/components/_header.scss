@@ -1,10 +1,14 @@
 .header {
+  position: absolute;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 .header-container {
   padding-left: 30px;
   padding-right: 11px;
+  max-width: 420px;
+  margin: 0 auto;
 }
 .header__nav {
   display: flex;
