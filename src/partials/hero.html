@@ -9,5 +9,33 @@
     </p>
     <b class="hero__try-it">Why don’t you try it now ?</b>
     <a href="#" class="hero__button">Download</a>
+    <picture>
+      <source
+        srcset="
+          ./images/landing-hero-image-mob.png?as=webp&width=268 1x,
+          ./images/landing-hero-image-mob.png?as=webp&width=536 2x,
+          ./images/landing-hero-image-mob.png?as=webp&width=804 3x
+        "
+        media=""
+        sizes=""
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/landing-hero-image-mob.png?width=268 1x,
+          ./images/landing-hero-image-mob.png?width=536 2x,
+          ./images/landing-hero-image-mob.png?width=804 3x
+        "
+        media=""
+        sizes=""
+        type="image/png"
+      />
+      <img
+        src="./images/landing-hero-image-mob.png"
+        alt="Omen picture"
+        width="268"
+        height="333"
+      />
+    </picture>
   </div>
 </section>
