@@ -1,0 +1,107 @@
+.about {
+  background-color: var(--red);
+  padding-top: 14px;
+  padding-bottom: 58px;
+}
+.about__body {
+}
+
+.about__title-container {
+  position: relative;
+  margin-bottom: 28px;
+}
+.about__title {
+  text-align: center;
+  position: absolute;
+  white-space: nowrap;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(30 / 24);
+
+  color: var(--dark);
+}
+.about__title-copy {
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: calc(60 / 48);
+
+  color: rgba(236, 232, 225, 0.1);
+}
+.about__content {
+  padding-bottom: 58px;
+  position: relative;
+  margin-bottom: 34px;
+}
+.about__image {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+.video-placeholder {
+  position: absolute;
+  background-color: var(--dark);
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+}
+.about__text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: calc(16 / 13);
+
+  color: var(--light);
+}
+.about__list {
+}
+.features-list {
+}
+.features-list__container {
+  position: relative;
+}
+.features-list__number {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: calc(80 / 64);
+  text-align: center;
+  color: var(--red);
+  -webkit-text-stroke: 1px rgba(236, 232, 225, 0.9);
+
+  //   border: 1px solid rgba(236, 232, 225, 0.9);
+}
+.features-list__feature {
+  @extend %center;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  text-align: center;
+  color: var(--dark);
+  margin: 0;
+}
+
+@media screen and (min-width: 410px) {
+  .about__title {
+    font-size: 24px;
+  }
+  .about__title-copy {
+    font-size: 48px;
+  }
+}
