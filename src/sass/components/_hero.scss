@@ -79,3 +79,31 @@
     margin-left: 38px;
   }
 }
+
+@media screen and (min-width: 678px) {
+  .hero__subtitle {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .hero__title {
+    font-size: 35px;
+    text-align: left;
+  }
+  .hero-text {
+    margin-left: 0;
+
+    font-size: 12px;
+    text-align: left;
+    max-width: 470px;
+  }
+  .hero__try-it {
+    margin-left: 0;
+    font-size: 16px;
+    text-align: left;
+    max-width: 411px;
+  }
+  .hero__button {
+    margin-left: 0;
+  }
+}
