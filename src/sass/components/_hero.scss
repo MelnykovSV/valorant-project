@@ -117,7 +117,7 @@
 
   .hero__body {
     padding-top: 105px;
-    padding-bottom: 321px;
+    padding-bottom: 295px;
     background: linear-gradient(
         to right,
         rgba(16, 24, 34, 0.95),
@@ -126,7 +126,7 @@
       url('./../images/landing-hero-bg.png') var(--dark);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: cover;
     &::after {
       content: '';
       height: 16%;
@@ -184,6 +184,15 @@
   .hero__body {
     padding-top: 222px;
     padding-bottom: 185px;
+    background: linear-gradient(
+        to right,
+        rgba(16, 24, 34, 0.95),
+        rgba(16, 24, 34, 0.5)
+      ),
+      url('./../images/landing-hero-bg.png') var(--dark);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
   }
 
   .hero__subtitle {
@@ -226,7 +235,7 @@
     display: block;
     color: var(--red);
     text-transform: uppercase;
-    left: 81px;
+    left: 76px;
     bottom: 100px;
     writing-mode: vertical-rl;
 
