@@ -1,5 +1,6 @@
 .hero {
   background-color: var(--dark);
+  position: relative;
 }
 .hero__body {
   padding-top: 128px;
@@ -112,8 +113,12 @@
   .hero__body {
     padding-top: 105px;
     padding-bottom: 321px;
-    background-color: var(--dark);
-    background-image: url('./../images/landing-hero-bg.png');
+    background: linear-gradient(
+        to right,
+        rgba(16, 24, 34, 0.95),
+        rgba(16, 24, 34, 0.5)
+      ),
+      url('./../images/landing-hero-bg.png') var(--dark);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -127,7 +132,7 @@
       left: 0;
       background: linear-gradient(
         to bottom left,
-        rgba(0, 0, 0, 0),
+        var(--transparent) 50%,
         var(--red) 50%
       );
     }
