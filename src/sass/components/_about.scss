@@ -207,7 +207,7 @@
   .about__content {
     padding-bottom: 0;
     margin-bottom: 0;
-    bottom: 198px;
+    bottom: 87px;
     padding-bottom: 115px;
     padding-right: 35px;
     width: 727px;
@@ -232,8 +232,9 @@
     line-height: calc(25 / 20);
     color: var(--light);
     margin-bottom: 116px;
+    padding-left: 40px;
 
-    width: 640px;
+    width: 680px;
   }
 
   .features-list {
@@ -262,7 +263,7 @@
   }
   .features-list__number {
     font-size: 96px;
-    line-height: calc(121 / 96);
+    line-height: calc(110 / 96);
   }
 
   .features-list__feature {
