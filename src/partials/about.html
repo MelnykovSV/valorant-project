@@ -9,6 +9,26 @@
       <picture class="about__image">
         <source
           srcset="
+            ./images/Jett.png?as=webp&width=528  1x,
+            ./images/Jett.png?as=webp&width=1056 2x,
+            ./images/Jett.png?as=webp&width=1584 3x
+          "
+          media="(min-width:1440px)"
+          sizes=""
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/Jett.png?width=528  1x,
+            ./images/Jett.png?width=1056 2x,
+            ./images/Jett.png?width=1584 3x
+          "
+          media="(min-width:1440px)"
+          sizes=""
+          type="image/png"
+        />
+        <source
+          srcset="
             ./images/Jett.png?as=webp&width=266 1x,
             ./images/Jett.png?as=webp&width=532 2x,
             ./images/Jett.png?as=webp&width=798 3x
@@ -27,12 +47,7 @@
           sizes=""
           type="image/png"
         />
-        <img
-          src="./images/Jett.png"
-          alt="Jett image"
-          width="266"
-          height="407"
-        />
+        <img src="./images/Jett.png" alt="Jett image" />
       </picture>
       <div class="video-placeholder"></div>
     </div>

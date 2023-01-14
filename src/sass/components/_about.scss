@@ -4,6 +4,7 @@
   padding-bottom: 58px;
 }
 .about__body {
+  position: relative;
 }
 
 .about__title-container {
@@ -123,7 +124,9 @@
   }
   .about__content {
     padding-bottom: 58px;
-    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     margin-bottom: 34px;
   }
   .about__image {
@@ -181,7 +184,6 @@
   }
   .about__content {
     padding-bottom: 58px;
-    position: relative;
     margin-bottom: 34px;
   }
   .about__image {
