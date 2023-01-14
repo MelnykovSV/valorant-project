@@ -112,6 +112,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .about__title {
     text-align: left;
     position: absolute;
@@ -122,6 +126,20 @@
     left: 40px;
     top: 50%;
   }
+
+  .about__body {
+    padding-bottom: 58px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 9px;
+      top: 0;
+      background-color: #ffffff;
+      width: 2px;
+      height: 78%;
+    }
+  }
+
   .about__title-copy {
     text-align: left;
     white-space: nowrap;
@@ -134,8 +152,8 @@
   .about__content {
     padding-bottom: 58px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 30px;
+    bottom: 40px;
     margin-bottom: 34px;
     width: 420px;
   }
@@ -159,24 +177,65 @@
     width: 400px;
 
     color: var(--light);
+    padding-left: 20px;
+    margin-bottom: 20px;
   }
 
   .features-list {
     width: fit-content;
     padding-left: 80px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 89.394%;
+      top: 70px;
+      left: 113px;
+      width: 2px;
+      background-color: var(--light);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 43%;
+      top: 70px;
+      left: 113px;
+      height: 2px;
+      background-color: var(--light);
+    }
   }
 
   .features-list__container {
     position: relative;
   }
   .features-list__number {
-    font-size: 70px;
+    font-size: 55px;
     line-height: calc(121 / 96);
   }
 
   .features-list__feature {
-    font-size: 30px;
+    font-size: 25px;
     line-height: calc(45 / 36);
+  }
+
+  .about__aside {
+    position: absolute;
+    right: 0px;
+    bottom: 64px;
+
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30 / 24);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+
+    color: #ffffff;
   }
 }
 
@@ -203,6 +262,7 @@
 
   .about__title-container {
     margin-bottom: 0;
+    margin-left: 26px;
   }
   .about__title {
     text-align: left;
@@ -237,6 +297,7 @@
     margin-right: 0;
     display: block;
     width: fit-content;
+    margin-bottom: 0;
   }
   .video-placeholder {
     position: absolute;
@@ -264,7 +325,7 @@
       position: absolute;
       height: 83.2669%;
       top: 210px;
-      left: 130px;
+      left: 156px;
       width: 2px;
       background-color: var(--light);
     }
@@ -273,7 +334,7 @@
       position: absolute;
       width: 43%;
       top: 210px;
-      left: 130px;
+      left: 156px;
       height: 2px;
       background-color: var(--light);
     }
