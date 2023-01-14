@@ -113,16 +113,20 @@
 
 @media screen and (min-width: 768px) {
   .about__title {
-    text-align: center;
+    text-align: left;
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     line-height: calc(80 / 64);
+    transform: translateY(-50%);
+
+    left: 40px;
+    top: 50%;
   }
   .about__title-copy {
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
 
-    font-size: 110px;
+    font-size: 65px;
     line-height: calc(163 / 130);
 
     color: rgba(236, 232, 225, 0.1);
@@ -130,7 +134,7 @@
   .about__content {
     padding-bottom: 58px;
     position: absolute;
-    right: 114px;
+    right: 0;
     bottom: 0;
     margin-bottom: 34px;
   }
@@ -148,14 +152,16 @@
     left: 0;
   }
   .about__text {
-    font-size: 16px;
+    font-size: 13px;
     line-height: calc(25 / 20);
+    width: 400px;
 
     color: var(--light);
   }
 
   .features-list {
     width: fit-content;
+    padding-left: 80px;
   }
 
   .features-list__container {
