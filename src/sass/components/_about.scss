@@ -170,7 +170,11 @@
 @media screen and (min-width: 1440px) {
   .about {
     padding-top: 75px;
-    padding-bottom: 138px;
+    padding-bottom: 0;
+  }
+
+  .about__title-container {
+    margin-bottom: 0;
   }
   .about__title {
     text-align: left;
@@ -187,13 +191,23 @@
     white-space: nowrap;
     font-size: 130px;
     line-height: calc(163 / 130);
+    vertical-align: bottom;
 
     color: rgba(236, 232, 225, 0.1);
+    &::after {
+      content: '';
+      position: absolute;
+      width: 53%;
+      height: 2px;
+      background-color: var(--light);
+      left: 0;
+      bottom: 0;
+    }
   }
   .about__content {
     padding-bottom: 0;
     margin-bottom: 0;
-    bottom: 40px;
+    bottom: 198px;
     padding-bottom: 115px;
     padding-right: 35px;
     width: 727px;
@@ -224,6 +238,15 @@
 
   .features-list {
     padding-left: 80px;
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   height: 100%;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 2px;
+    //   background-color: var(--light);
+    // }
   }
   .features-list__container {
     position: relative;
@@ -236,5 +259,10 @@
   .features-list__feature {
     font-size: 36px;
     line-height: calc(45 / 36);
+  }
+
+  .decorations {
+    border-left: solid 1px var(--light);
+    padding-bottom: 138px;
   }
 }
