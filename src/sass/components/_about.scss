@@ -173,6 +173,10 @@
     padding-bottom: 0;
   }
 
+  .about__body {
+    padding-bottom: 164px;
+  }
+
   .about__title-container {
     margin-bottom: 0;
   }
@@ -207,7 +211,7 @@
   .about__content {
     padding-bottom: 0;
     margin-bottom: 0;
-    bottom: 87px;
+    bottom: 177px;
     padding-bottom: 115px;
     padding-right: 35px;
     width: 727px;
@@ -227,7 +231,7 @@
     left: 0;
   }
   .about__text {
-    padding-top: 67px;
+    padding-top: 47px;
     font-size: 20px;
     line-height: calc(25 / 20);
     color: var(--light);
@@ -238,11 +242,11 @@
   }
 
   .features-list {
-    padding-left: 80px;
+    padding-left: 140px;
     &::before {
       content: '';
       position: absolute;
-      height: 87.5%;
+      height: 88.5593%;
       top: 135px;
       left: 140px;
       width: 2px;
