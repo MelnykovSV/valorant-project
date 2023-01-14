@@ -33,7 +33,7 @@
   font-family: 'Source Sans Pro';
   font-style: italic;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 32px;
   line-height: calc(60 / 48);
 
   color: rgba(236, 232, 225, 0.1);
@@ -103,5 +103,118 @@
   }
   .about__title-copy {
     font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__title {
+    text-align: center;
+    position: absolute;
+    font-size: 50px;
+    line-height: calc(80 / 64);
+  }
+  .about__title-copy {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 110px;
+    line-height: calc(163 / 130);
+
+    color: rgba(236, 232, 225, 0.1);
+  }
+  .about__content {
+    padding-bottom: 58px;
+    position: relative;
+    margin-bottom: 34px;
+  }
+  .about__image {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+  .video-placeholder {
+    position: absolute;
+    background-color: var(--dark);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+  }
+  .about__text {
+    font-size: 16px;
+    line-height: calc(25 / 20);
+
+    color: var(--light);
+  }
+
+  .features-list {
+    width: fit-content;
+  }
+
+  .features-list__container {
+    position: relative;
+  }
+  .features-list__number {
+    font-size: 70px;
+    line-height: calc(121 / 96);
+  }
+
+  .features-list__feature {
+    font-size: 30px;
+    line-height: calc(45 / 36);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__title {
+    text-align: center;
+    position: absolute;
+    font-size: 64px;
+    line-height: calc(80 / 64);
+  }
+  .about__title-copy {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 130px;
+    line-height: calc(163 / 130);
+
+    color: rgba(236, 232, 225, 0.1);
+  }
+  .about__content {
+    padding-bottom: 58px;
+    position: relative;
+    margin-bottom: 34px;
+  }
+  .about__image {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+  .video-placeholder {
+    position: absolute;
+    background-color: var(--dark);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+  }
+  .about__text {
+    font-size: 20px;
+    line-height: calc(25 / 20);
+    color: var(--light);
+
+    width: 640px;
+  }
+
+  .features-list__container {
+    position: relative;
+  }
+  .features-list__number {
+    font-size: 96px;
+    line-height: calc(121 / 96);
+  }
+
+  .features-list__feature {
+    font-size: 36px;
+    line-height: calc(45 / 36);
   }
 }
