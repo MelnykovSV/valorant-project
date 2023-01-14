@@ -74,6 +74,11 @@
   width: fit-content;
 }
 
+.hero__skills,
+.hero__players {
+  display: none;
+}
+
 @media screen and (min-width: 400px) {
   .hero__title {
     font-size: 68px;
@@ -213,5 +218,43 @@
   }
   .hero__image {
     right: 72;
+  }
+
+  .hero__players {
+    position: absolute;
+    display: block;
+    color: var(--red);
+    text-transform: uppercase;
+    left: 81px;
+    bottom: 100px;
+    writing-mode: vertical-rl;
+
+    transform: rotate(180deg);
+    height: 221px;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    letter-spacing: 0.25em;
+  }
+  .hero__skills {
+    position: absolute;
+    display: block;
+    color: var(--red);
+    text-transform: uppercase;
+    right: 222px;
+    top: 222px;
+    height: 135px;
+
+    writing-mode: vertical-rl;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    letter-spacing: 0.25em;
   }
 }
