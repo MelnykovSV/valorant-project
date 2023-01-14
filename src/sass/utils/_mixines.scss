@@ -1,50 +1,52 @@
+// @mixin button($col, $bgcol, $bordcol) {
+//   text-align: center;
+//   cursor: pointer;
+//   font-family: 'VALORANT';
+//   text-transform: uppercase;
+//   padding: 19px 37px;
+//   background-color: $bgcol;
+//   color: $col;
+//   position: relative;
+//   max-width: 500px;
+//   display: block;
+//   text-decoration: none;
+//   width: fit-content;
+
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     width: 45.3947%;
+//     height: calc(100% + 8px);
+//     left: -4px;
+//     top: -4px;
+
+//     border-left: solid $bordcol 2px;
+//     border-top: solid $bordcol 2px;
+//     border-bottom: solid $bordcol 2px;
+//   }
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     width: 45.3947%;
+//     height: calc(100% + 8px);
+//     right: -4px;
+//     top: -4px;
+
+//     border-right: solid $bordcol 2px;
+//     border-top: solid $bordcol 2px;
+//     border-bottom: solid $bordcol 2px;
+//   }
+// }
+
 @mixin button($col, $bgcol, $bordcol) {
   text-align: center;
   cursor: pointer;
   font-family: 'VALORANT';
   text-transform: uppercase;
-  padding: 19px 37px;
-  background-color: $bgcol;
-  color: $col;
-  position: relative;
-  max-width: 500px;
-  display: block;
-  text-decoration: none;
-  width: fit-content;
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 45.3947%;
-    height: calc(100% + 8px);
-    left: -4px;
-    top: -4px;
-
-    border-left: solid $bordcol 2px;
-    border-top: solid $bordcol 2px;
-    border-bottom: solid $bordcol 2px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 45.3947%;
-    height: calc(100% + 8px);
-    right: -4px;
-    top: -4px;
-
-    border-right: solid $bordcol 2px;
-    border-top: solid $bordcol 2px;
-    border-bottom: solid $bordcol 2px;
-  }
-}
-
-@mixin button-mob($col, $bgcol, $bordcol) {
-  text-align: center;
-  cursor: pointer;
-  font-family: 'VALORANT';
-  text-transform: uppercase;
   padding: 10px 20px;
+  font-size: 18px;
+  line-height: 109.84%;
   background-color: $bgcol;
   color: $col;
   position: relative;
@@ -77,5 +79,29 @@
     border-right: solid $bordcol 2px;
     border-top: solid $bordcol 2px;
     border-bottom: solid $bordcol 2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 20px;
+    font-size: 30px;
+    line-height: 109.84%;
+
+    &::before {
+      width: 45.977%;
+      height: calc(100% + 14px);
+      left: -7px;
+      top: -7px;
+    }
+
+    &::after {
+      width: 45.977%;
+      height: calc(100% + 14px);
+      right: -7px;
+      top: -7px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 20px 46px;
   }
 }

@@ -65,7 +65,7 @@
   //   width: 100%;
 }
 .hero__button {
-  @include button-mob(var(--dark), var(--red), var(--light));
+  @include button(var(--dark), var(--red), var(--light));
   margin: 0 auto;
 }
 .hero__image {
@@ -169,6 +169,7 @@
   }
   .hero__button {
     margin-left: 0;
+    @include button(var(--dark), var(--light), var(--light));
   }
 
   .hero__image {
@@ -182,7 +183,7 @@
 @media screen and (min-width: 1440px) {
   .hero__body {
     padding-top: 222px;
-    padding-bottom: 221px;
+    padding-bottom: 185px;
   }
 
   .hero__subtitle {
@@ -211,7 +212,7 @@
     font-size: 36px;
     text-align: left;
     max-width: 411px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .hero__button {
     margin-left: 0;
@@ -230,7 +231,7 @@
     writing-mode: vertical-rl;
 
     transform: rotate(180deg);
-    height: 221px;
+    height: 240px;
 
     font-family: 'Source Sans Pro';
     font-style: normal;
