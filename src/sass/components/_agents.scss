@@ -1,11 +1,19 @@
 :root {
-  --test-height: 0;
-  --test-left: 0;
+  // --test-height: 0;
+  // --test-left: 0;
+  // --test-top: 0;
+  // --test-width: 0;
 
-  --test-top: 0;
-  --test-width: 0;
+  // --second-pseudoelement-h: 0;
+  // --second-pseudoelement-right: 0;
+  // --second-pseudoelement-top: 0;
 
-  --second-pseudoelement-h: 0;
+  --first-pseudoelement-height: 0;
+  --first-pseudoelement-left: 0;
+  --first-pseudoelement-top: 0;
+  --first-pseudoelement-width: 0;
+
+  --second-pseudoelement-height: 0;
   --second-pseudoelement-right: 0;
   --second-pseudoelement-top: 0;
 }
@@ -18,17 +26,17 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: var(--test-left);
+    left: var(--first-pseudoelement-left);
     width: 3px;
     background-color: red;
-    height: var(--test-height);
+    height: var(--first-pseudoelement-height);
   }
   &::after {
     content: '';
     position: absolute;
-    top: var(--test-top);
-    left: var(--test-left);
-    width: var(--test-width);
+    top: var(--first-pseudoelement-top);
+    left: var(--first-pseudoelement-left);
+    width: var(--first-pseudoelement-width);
     background-color: red;
     height: 3px;
   }
@@ -65,7 +73,7 @@ h2 {
     right: var(--second-pseudoelement-right);
     width: 3px;
     background-color: red;
-    height: var(--second-pseudoelement-h);
+    height: var(--second-pseudoelement-height);
   }
 }
 
