@@ -2,6 +2,35 @@
   background-color: var(--dark);
   padding-top: 27px;
   // padding-bottom: 61px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    @media screen and (min-width: 882px) {
+      display: block;
+      width: var(--cutting-element-width);
+      height: 113px;
+      background-color: var(--red);
+
+      background: linear-gradient(
+        45deg,
+        var(--transparent) 79px,
+        var(--red) 79px
+      );
+    }
+    @media screen and (min-width: 1440px) {
+      height: 140px;
+      background: linear-gradient(
+        45deg,
+        var(--transparent) 99px,
+        var(--red) 99px
+      );
+    }
+  }
 }
 .agents__body {
   position: relative;
@@ -113,7 +142,7 @@
     top: -27px;
     display: none;
     @media screen and (min-width: 882px) {
-      display: block;
+      // display: block;
       width: 113px;
       height: 113px;
       background: linear-gradient(
@@ -124,22 +153,6 @@
     }
     @media screen and (min-width: 1440px) {
       width: 140px;
-      height: 140px;
-    }
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: -27px;
-    display: none;
-    @media screen and (min-width: 882px) {
-      display: block;
-      width: --cutting-element-width;
-      height: 113px;
-      background-color: var(--red);
-    }
-    @media screen and (min-width: 1440px) {
       height: 140px;
     }
   }
