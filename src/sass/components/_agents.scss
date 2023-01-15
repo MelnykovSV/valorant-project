@@ -1,16 +1,71 @@
 .agents {
   background-color: var(--dark);
+  padding-top: 27px;
+  // padding-bottom: 61px;
+}
+.agents__body {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--first-pseudoelement-left);
+    width: 3px;
+    background-color: red;
+    height: var(--first-pseudoelement-height);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: var(--first-pseudoelement-top);
+    left: var(--first-pseudoelement-left);
+    width: var(--first-pseudoelement-width);
+    background-color: red;
+    height: 3px;
+  }
 }
 
 .agents-title-container {
   width: fit-content;
+  margin-bottom: 27px;
 }
 
 .agents__title {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  text-transform: uppercase;
+  width: fit-content;
+
+  color: rgba(236, 232, 225, 0.9);
 }
 .agents__title-copy {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(60 / 48);
+  text-transform: uppercase;
+  width: fit-content;
+
+  color: rgba(236, 232, 225, 0.1);
 }
 .agents__content {
+  margin-bottom: 43px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: var(--second-pseudoelement-top);
+    right: var(--second-pseudoelement-right);
+    width: 3px;
+    background-color: red;
+    height: var(--second-pseudoelement-h);
+    height: var(--second-pseudoelement-height);
+  }
 }
 .agents__image {
 }
@@ -18,15 +73,30 @@
   display: none;
 }
 .agents__text1 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: var(--light);
+  margin-bottom: 44px;
 }
 .agents__button {
   @include button(var(--red), var(--transparent), var(--light));
 }
 .agents__text2 {
   display: none;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: var(--light);
 }
 .agents__aside {
-  display: none;
+  // display: none;
   position: absolute;
   right: 0;
   bottom: 40px;
@@ -34,3 +104,5 @@
   width: fit-content;
   transform: rotate(-180deg);
 }
+
+// ================OLD CODE======================

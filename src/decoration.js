@@ -7,7 +7,7 @@ if (window.innerWidth >= 768) {
     // ====================First pseudoelement==========================
 
     // --------vertical--------
-    const container = sec.querySelector('.container');
+    const container = sec.querySelector('.container-new');
     const title = sec.querySelector('.decorated-title');
     const aside = sec.querySelector('.decorated-aside');
     console.log(container, title, aside);
@@ -66,6 +66,15 @@ if (window.innerWidth >= 768) {
     aside.style.right =
       getComputedStyle(container).getPropertyValue('padding-right');
   });
+} else {
+  window.style.setProperty('--first-pseudoelement-height', 0);
+  window.style.setProperty('--first-pseudoelement-left', 0);
+  window.style.setProperty('--first-pseudoelement-top', 0);
+  window.style.setProperty('--first-pseudoelement-width', 0);
+
+  window.style.setProperty('--second-pseudoelement-height', 0);
+  window.style.setProperty('--second-pseudoelement-right', 0);
+  window.style.setProperty('--second-pseudoelement-top', 0);
 }
 
 // =================EXAMPLE OF SECTION TO BE DECORATED================

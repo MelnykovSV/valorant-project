@@ -4,6 +4,12 @@
   padding-right: 25px;
   width: min(420px, 100%);
 }
+.container-new {
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: min(420px, 100%);
+}
 
 .visually-hidden {
   position: absolute;
@@ -20,14 +26,29 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    padding-left: 114px;
-    padding-right: 114px;
+    padding-left: 113px;
+    padding-right: 113px;
     width: min(768px, 100%);
+  }
+}
+
+@media screen and (min-width: 882px) {
+  .container-new {
+    margin: 0 auto;
+    padding-left: 113px;
+    padding-right: 113px;
+    width: min(882px, 100%);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
+    padding-left: 140px;
+    padding-right: 140px;
+    width: min(1440px, 100%);
+  }
+
+  .container-new {
     padding-left: 140px;
     padding-right: 140px;
     width: min(1440px, 100%);
