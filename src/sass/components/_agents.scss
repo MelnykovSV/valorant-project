@@ -1,0 +1,70 @@
+:root {
+  --test-height: 0;
+  --test-left: 0;
+
+  --test-top: 0;
+  --test-width: 0;
+
+  --second-pseudoelement-h: 0;
+  --second-pseudoelement-right: 0;
+  --second-pseudoelement-top: 0;
+}
+
+.test-container {
+  //   padding-left: 140px;
+  //   padding-right: 140px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: var(--test-left);
+    width: 3px;
+    background-color: red;
+    height: var(--test-height);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: var(--test-top);
+    left: var(--test-left);
+    width: var(--test-width);
+    background-color: red;
+    height: 3px;
+  }
+}
+
+.decorated-section {
+  padding-top: 50px;
+
+  position: relative;
+}
+
+p {
+  width: 450px;
+}
+
+h2 {
+  width: fit-content;
+}
+
+.aside {
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  writing-mode: vertical-lr;
+  width: fit-content;
+  transform: rotate(-180deg);
+}
+
+.assistant {
+  &::before {
+    content: '';
+    position: absolute;
+    top: var(--second-pseudoelement-top);
+    right: var(--second-pseudoelement-right);
+    width: 3px;
+    background-color: red;
+    height: var(--second-pseudoelement-h);
+  }
+}
