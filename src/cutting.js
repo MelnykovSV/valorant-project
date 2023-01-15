@@ -1,4 +1,8 @@
-addEventListener('resize', () => {
+addEventListener('resize', cutter);
+
+addEventListener('load', cutter);
+
+function cutter() {
   const sections = document.querySelectorAll('.cut');
 
   [...sections].map(sec => {
@@ -8,4 +12,4 @@ addEventListener('resize', () => {
       parseInt(getComputedStyle(container).getPropertyValue('padding-right'));
     sec.style.setProperty('--cutting-element-width', cutElementWidth + 'px');
   });
-});
+}

@@ -37,21 +37,29 @@
 
   &::before {
     content: '';
+    display: none;
     position: absolute;
     bottom: 0;
     left: var(--first-pseudoelement-left);
     width: 3px;
     background-color: red;
     height: var(--first-pseudoelement-height);
+    @media screen and (min-width: 882px) {
+      display: block;
+    }
   }
   &::after {
     content: '';
+    display: none;
     position: absolute;
     top: var(--first-pseudoelement-top);
     left: var(--first-pseudoelement-left);
     width: var(--first-pseudoelement-width);
     background-color: red;
     height: 3px;
+    @media screen and (min-width: 882px) {
+      display: block;
+    }
   }
 }
 
@@ -87,6 +95,7 @@
 
   &::before {
     content: '';
+    display: none;
     position: absolute;
     top: var(--second-pseudoelement-top);
     right: var(--second-pseudoelement-right);
@@ -94,6 +103,9 @@
     background-color: red;
     height: var(--second-pseudoelement-h);
     height: var(--second-pseudoelement-height);
+    @media screen and (min-width: 882px) {
+      display: block;
+    }
   }
 }
 .agents__image {

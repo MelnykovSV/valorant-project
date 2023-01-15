@@ -1,4 +1,7 @@
-addEventListener('resize', () => {
+addEventListener('resize', decoration);
+addEventListener('load', decoration);
+
+function decoration() {
   const sections = document.querySelectorAll('.decorated-section');
 
   console.log(window.innerWidth);
@@ -67,20 +70,8 @@ addEventListener('resize', () => {
       aside.style.right =
         getComputedStyle(container).getPropertyValue('padding-right');
     });
-  } else {
-    const sections = document.querySelectorAll('.decorated-section');
-    [...sections].map(sec => {
-      sec.style.setProperty('--first-pseudoelement-height', 0);
-      sec.style.setProperty('--first-pseudoelement-left', 0);
-      sec.style.setProperty('--first-pseudoelement-top', 0);
-      sec.style.setProperty('--first-pseudoelement-width', 0);
-
-      sec.style.setProperty('--second-pseudoelement-height', 0);
-      sec.style.setProperty('--second-pseudoelement-right', 0);
-      sec.style.setProperty('--second-pseudoelement-top', 0);
-    });
   }
-});
+}
 
 // =================EXAMPLE OF SECTION TO BE DECORATED================
 
@@ -120,3 +111,16 @@ addEventListener('resize', () => {
     <p class="decorated-aside">Lorem ipsum dolor</p>
   </div>
 </section> */
+
+// } else {
+//   const sections = document.querySelectorAll('.decorated-section');
+//   [...sections].map(sec => {
+//     sec.style.setProperty('--first-pseudoelement-height', 0);
+//     sec.style.setProperty('--first-pseudoelement-left', 0);
+//     sec.style.setProperty('--first-pseudoelement-top', 0);
+//     sec.style.setProperty('--first-pseudoelement-width', 0);
+
+//     sec.style.setProperty('--second-pseudoelement-height', 0);
+//     sec.style.setProperty('--second-pseudoelement-right', 0);
+//     sec.style.setProperty('--second-pseudoelement-top', 0);
+//   });
