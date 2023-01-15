@@ -1,86 +1,87 @@
-const sections = document.querySelectorAll('.decorated-section');
+addEventListener('resize', () => {
+  const sections = document.querySelectorAll('.decorated-section');
 
-console.log(window.innerWidth);
+  console.log(window.innerWidth);
 
-if (window.innerWidth >= 768) {
-  [...sections].map(sec => {
-    // ====================First pseudoelement==========================
+  if (window.innerWidth >= 768) {
+    [...sections].map(sec => {
+      // ====================First pseudoelement==========================
 
-    // --------vertical--------
-    const container = sec.querySelector('.container-new');
-    const title = sec.querySelector('.decorated-title');
-    const aside = sec.querySelector('.decorated-aside');
-    console.log(container, title, aside);
+      // --------vertical--------
+      const container = sec.querySelector('.container-new');
+      const title = sec.querySelector('.decorated-title');
+      const aside = sec.querySelector('.decorated-aside');
+      console.log(container, title, aside);
 
-    const sectionHeight = sec.offsetHeight;
+      const sectionHeight = sec.offsetHeight;
 
-    const sectionPaddingTop = parseInt(
-      window.getComputedStyle(sec).getPropertyValue('padding-top')
-    );
+      const sectionPaddingTop = parseInt(
+        window.getComputedStyle(sec).getPropertyValue('padding-top')
+      );
 
-    const titleHeight = title.offsetHeight;
-    const deco1Height = sectionHeight - sectionPaddingTop - titleHeight;
-    sec.style.setProperty(
-      '--first-pseudoelement-height',
-      deco1Height - 1 + 'px'
-    );
+      const titleHeight = title.offsetHeight;
+      const deco1Height = sectionHeight - sectionPaddingTop - titleHeight;
+      sec.style.setProperty(
+        '--first-pseudoelement-height',
+        deco1Height - 1 + 'px'
+      );
 
-    sec.style.setProperty(
-      '--first-pseudoelement-left',
-      getComputedStyle(container).getPropertyValue('padding-left') + 'px'
-    );
+      sec.style.setProperty(
+        '--first-pseudoelement-left',
+        getComputedStyle(container).getPropertyValue('padding-left') + 'px'
+      );
 
-    // --------horisontal--------
+      // --------horisontal--------
 
-    sec.style.setProperty(
-      '--first-pseudoelement-width',
-      title.offsetWidth + 'px'
-    );
-    sec.style.setProperty('--first-pseudoelement-top', titleHeight + 'px');
+      sec.style.setProperty(
+        '--first-pseudoelement-width',
+        title.offsetWidth + 'px'
+      );
+      sec.style.setProperty('--first-pseudoelement-top', titleHeight + 'px');
 
-    // ====================Second pseudoelement==========================
+      // ====================Second pseudoelement==========================
 
-    sec.style.setProperty(
-      '--second-pseudoelement-right',
-      aside.offsetWidth / 3 +
-        parseInt(
-          getComputedStyle(container).getPropertyValue('padding-right')
-        ) +
-        'px'
-    );
+      sec.style.setProperty(
+        '--second-pseudoelement-right',
+        aside.offsetWidth / 3 +
+          parseInt(
+            getComputedStyle(container).getPropertyValue('padding-right')
+          ) +
+          'px'
+      );
 
-    sec.style.setProperty(
-      '--second-pseudoelement-height',
-      sectionHeight -
-        aside.offsetHeight -
-        parseInt(getComputedStyle(aside).getPropertyValue('bottom')) -
-        10 +
-        'px'
-    );
+      sec.style.setProperty(
+        '--second-pseudoelement-height',
+        sectionHeight -
+          aside.offsetHeight -
+          parseInt(getComputedStyle(aside).getPropertyValue('bottom')) -
+          10 +
+          'px'
+      );
 
-    sec.style.setProperty(
-      '--second-pseudoelement-top',
-      0 - sectionPaddingTop + 'px'
-    );
+      sec.style.setProperty(
+        '--second-pseudoelement-top',
+        0 - sectionPaddingTop + 'px'
+      );
 
-    aside.style.right =
-      getComputedStyle(container).getPropertyValue('padding-right');
-  });
-} else {
-  window.style.setProperty('--first-pseudoelement-height', 0);
-  window.style.setProperty('--first-pseudoelement-left', 0);
-  window.style.setProperty('--first-pseudoelement-top', 0);
-  window.style.setProperty('--first-pseudoelement-width', 0);
+      aside.style.right =
+        getComputedStyle(container).getPropertyValue('padding-right');
+    });
+  } else {
+    window.style.setProperty('--first-pseudoelement-height', 0);
+    window.style.setProperty('--first-pseudoelement-left', 0);
+    window.style.setProperty('--first-pseudoelement-top', 0);
+    window.style.setProperty('--first-pseudoelement-width', 0);
 
-  window.style.setProperty('--second-pseudoelement-height', 0);
-  window.style.setProperty('--second-pseudoelement-right', 0);
-  window.style.setProperty('--second-pseudoelement-top', 0);
-}
+    window.style.setProperty('--second-pseudoelement-height', 0);
+    window.style.setProperty('--second-pseudoelement-right', 0);
+    window.style.setProperty('--second-pseudoelement-top', 0);
+  }
+});
 
 // =================EXAMPLE OF SECTION TO BE DECORATED================
 
-{
-  /* <section class="section decorated-section">
+/* <section class="section decorated-section">
   <div class="container">
     <h2 class="decorated-title">Title of random length fghjjfgjhgjjhgjhjhgj</h2>
     <p class="test-p">
@@ -116,4 +117,3 @@ if (window.innerWidth >= 768) {
     <p class="decorated-aside">Lorem ipsum dolor</p>
   </div>
 </section> */
-}
