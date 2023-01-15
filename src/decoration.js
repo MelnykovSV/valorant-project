@@ -3,7 +3,7 @@ addEventListener('resize', () => {
 
   console.log(window.innerWidth);
 
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 882) {
     [...sections].map(sec => {
       // ====================First pseudoelement==========================
 
@@ -68,14 +68,17 @@ addEventListener('resize', () => {
         getComputedStyle(container).getPropertyValue('padding-right');
     });
   } else {
-    window.style.setProperty('--first-pseudoelement-height', 0);
-    window.style.setProperty('--first-pseudoelement-left', 0);
-    window.style.setProperty('--first-pseudoelement-top', 0);
-    window.style.setProperty('--first-pseudoelement-width', 0);
+    const sections = document.querySelectorAll('.decorated-section');
+    [...sections].map(sec => {
+      sec.style.setProperty('--first-pseudoelement-height', 0);
+      sec.style.setProperty('--first-pseudoelement-left', 0);
+      sec.style.setProperty('--first-pseudoelement-top', 0);
+      sec.style.setProperty('--first-pseudoelement-width', 0);
 
-    window.style.setProperty('--second-pseudoelement-height', 0);
-    window.style.setProperty('--second-pseudoelement-right', 0);
-    window.style.setProperty('--second-pseudoelement-top', 0);
+      sec.style.setProperty('--second-pseudoelement-height', 0);
+      sec.style.setProperty('--second-pseudoelement-right', 0);
+      sec.style.setProperty('--second-pseudoelement-top', 0);
+    });
   }
 });
 
