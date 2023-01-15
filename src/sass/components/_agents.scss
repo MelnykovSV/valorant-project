@@ -1,82 +1,15 @@
-:root {
-  // --test-height: 0;
-  // --test-left: 0;
-  // --test-top: 0;
-  // --test-width: 0;
-
-  // --second-pseudoelement-h: 0;
-  // --second-pseudoelement-right: 0;
-  // --second-pseudoelement-top: 0;
-
-  --first-pseudoelement-height: 0;
-  --first-pseudoelement-left: 0;
-  --first-pseudoelement-top: 0;
-  --first-pseudoelement-width: 0;
-
-  --second-pseudoelement-height: 0;
-  --second-pseudoelement-right: 0;
-  --second-pseudoelement-top: 0;
-}
-
-.test-container {
-  //   padding-left: 140px;
-  //   padding-right: 140px;
-  position: relative;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: var(--first-pseudoelement-left);
-    width: 3px;
-    background-color: red;
-    height: var(--first-pseudoelement-height);
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    top: var(--first-pseudoelement-top);
-    left: var(--first-pseudoelement-left);
-    width: var(--first-pseudoelement-width);
-    background-color: red;
-    height: 3px;
-  }
-}
-
 .decorated-section {
-  padding-top: 50px;
-
-  position: relative;
 }
 
-p {
-  width: 450px;
-}
-
-h2 {
+.decorated-title {
   width: fit-content;
 }
 
-.aside {
+.decorated-aside {
   position: absolute;
   right: 0;
   bottom: 40px;
   writing-mode: vertical-lr;
   width: fit-content;
   transform: rotate(-180deg);
-}
-
-.assistant {
-  &::before {
-    content: '';
-    position: absolute;
-    top: var(--second-pseudoelement-top);
-    right: var(--second-pseudoelement-right);
-    width: 3px;
-    background-color: red;
-    height: var(--second-pseudoelement-height);
-  }
-}
-
-.test-p {
-  padding-left: 100px;
 }
