@@ -1,11 +1,32 @@
-.decorated-section {
+.agents {
+  background-color: var(--dark);
 }
 
-.decorated-title {
+.agents-title-container {
   width: fit-content;
 }
 
-.decorated-aside {
+.agents__title {
+}
+.agents__title-copy {
+}
+.agents__content {
+}
+.agents__image {
+}
+.agents-check-all {
+  display: none;
+}
+.agents__text1 {
+}
+.agents__button {
+  @include button(var(--red), var(--transparent), var(--light));
+}
+.agents__text2 {
+  display: none;
+}
+.agents__aside {
+  display: none;
   position: absolute;
   right: 0;
   bottom: 40px;
