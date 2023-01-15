@@ -105,4 +105,42 @@
   transform: rotate(-180deg);
 }
 
-// ================OLD CODE======================
+.cut-right {
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -27px;
+    display: none;
+    @media screen and (min-width: 882px) {
+      display: block;
+      width: 113px;
+      height: 113px;
+      background: linear-gradient(
+        to bottom left,
+        var(--red) 50%,
+        var(--transparent) 50%
+      );
+    }
+    @media screen and (min-width: 1440px) {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -27px;
+    display: none;
+    @media screen and (min-width: 882px) {
+      display: block;
+      width: --cutting-element-width;
+      height: 113px;
+      background-color: var(--red);
+    }
+    @media screen and (min-width: 1440px) {
+      height: 140px;
+    }
+  }
+}
