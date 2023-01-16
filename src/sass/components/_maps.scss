@@ -1,10 +1,22 @@
 .maps {
-  background: url('./../images/landing-maps-img.png'), var(--light);
+  background: linear-gradient(to bottom, var(--light) 20%, var(--light) 20%);
+  background-size: cover;
+  background-repeat: no-repeat;
   @media screen and (min-width: 882px) {
     background: linear-gradient(to bottom, var(--dark) 20%, var(--light) 20%);
   }
 }
 .maps__body {
+  background: url('./../images/landing-maps-img.png'),
+    linear-gradient(to bottom, var(--light) 20%, var(--light) 20%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 882px) {
+    background: url('./../images/landing-maps-img.png'),
+      linear-gradient(to bottom, var(--dark) 20%, var(--light) 20%);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .maps__title-container {
 }
