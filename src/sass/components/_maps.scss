@@ -44,10 +44,10 @@
     }
   }
   @media screen and (min-width: 1440px) {
-    // background: url('./../images/landing-maps-img.png'),
-    //   linear-gradient(to bottom, var(--dark) 15.4696%, var(--light) 15.4696%);
-    // background-size: contain;
-    // background-repeat: no-repeat;
+    background: url('./../images/landing-maps-img.png'),
+      linear-gradient(to bottom, var(--dark) 140px, var(--light) 140px);
+    background-size: contain;
+    background-repeat: no-repeat;
     &::before {
       content: '';
       position: absolute;
