@@ -1,21 +1,62 @@
 .maps {
-  background: linear-gradient(to bottom, var(--light) 20%, var(--light) 20%);
+  background: linear-gradient(
+    to bottom,
+    var(--light) 113px,
+    var(--light) 113px
+  );
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (min-width: 882px) {
-    background: linear-gradient(to bottom, var(--dark) 20%, var(--light) 20%);
+    background: linear-gradient(
+      to bottom,
+      var(--dark) 113px,
+      var(--light) 113px
+    );
+  }
+  @media screen and (min-width: 1440px) {
+    background: linear-gradient(
+      to bottom,
+      var(--dark) 140px,
+      var(--light) 140px
+    );
   }
 }
 .maps__body {
+  position: relative;
   background: url('./../images/landing-maps-img.png'),
-    linear-gradient(to bottom, var(--light) 20%, var(--light) 20%);
+    linear-gradient(to bottom, var(--light) 113px, var(--light) 113px);
   background-size: contain;
   background-repeat: no-repeat;
+
   @media screen and (min-width: 882px) {
     background: url('./../images/landing-maps-img.png'),
-      linear-gradient(to bottom, var(--dark) 20%, var(--light) 20%);
+      linear-gradient(to bottom, var(--dark) 113px, var(--light) 113px);
     background-size: contain;
     background-repeat: no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 113px;
+      top: 0;
+      width: 2px;
+      height: 113px;
+      background-color: var(--white);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    // background: url('./../images/landing-maps-img.png'),
+    //   linear-gradient(to bottom, var(--dark) 15.4696%, var(--light) 15.4696%);
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 140px;
+      top: 0;
+      width: 2px;
+      height: 140px;
+      background-color: var(--white);
+    }
   }
 }
 .maps__title-container {
