@@ -68,7 +68,11 @@ function decoration() {
       );
 
       aside.style.right =
-        getComputedStyle(container).getPropertyValue('padding-right');
+        parseInt(
+          getComputedStyle(container).getPropertyValue('padding-right')
+        ) -
+        12 +
+        'px';
     });
   }
 }
