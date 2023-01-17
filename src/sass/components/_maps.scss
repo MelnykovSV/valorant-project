@@ -37,6 +37,7 @@
     padding-top: 120px;
     padding-left: 113px;
     padding-right: 113px;
+    padding-bottom: 164px;
     background: url('./../images/landing-maps-img.png'),
       linear-gradient(to bottom, var(--dark) 113px, var(--light) 113px);
     background-size: cover;
@@ -57,8 +58,9 @@
     padding-right: 140px;
     background: url('./../images/landing-maps-img.png'),
       linear-gradient(to bottom, var(--dark) 140px, var(--light) 140px);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom right;
     &::before {
       content: '';
       position: absolute;
@@ -71,12 +73,17 @@
   }
 }
 .maps__title-container {
+  text-transform: uppercase;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 38px;
   position: relative;
   @media screen and (min-width: 882px) {
     margin-left: 0;
+    margin-bottom: 65px;
+  }
+  @media screen and (min-width: 882px) {
+    margin-bottom: 97px;
   }
 }
 .maps__title {
@@ -93,6 +100,14 @@
   text-align: center;
   color: var(--semidark);
   width: fit-content;
+
+  @media screen and (min-width: 882px) {
+    font-size: 50px;
+    line-height: calc(80 / 64);
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+  }
 }
 .maps__title-copy {
   font-family: 'Source Sans Pro';
@@ -103,6 +118,14 @@
   width: fit-content;
 
   color: rgba(24, 33, 42, 0.1);
+
+  @media screen and (min-width: 882px) {
+    font-size: 100px;
+    line-height: calc(163 / 130);
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 130px;
+  }
 }
 .maps__text {
   font-family: 'Source Sans Pro';
@@ -114,6 +137,18 @@
   width: 258px;
 
   color: var(--semidark);
+
+  @media screen and (min-width: 882px) {
+    margin-bottom: 78px;
+    width: 300px;
+    font-size: 16px;
+    line-height: calc(25 / 20);
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 108px;
+    width: 473px;
+    font-size: 20px;
+  }
 }
 .maps__text-subtitle {
   text-transform: uppercase;
@@ -121,4 +156,10 @@
 .maps__button {
   @include button(var(--semidark), var(--transparent), var(--semidark));
   padding: 13px 50px;
+  @media screen and (min-width: 882px) {
+    padding: 18px 57px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 25px 68px;
+  }
 }
