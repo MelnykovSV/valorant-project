@@ -1,0 +1,79 @@
+.guns {
+  background-color: var(--dark);
+}
+
+.guns__body {
+}
+.container-new {
+}
+.decorated-title {
+}
+.agents-title-container {
+}
+.agents__title {
+}
+
+.guns-title-container {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  position: relative;
+  @media screen and (min-width: 882px) {
+    margin-left: 0;
+  }
+}
+
+.guns__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  text-transform: uppercase;
+  width: fit-content;
+
+  color: rgba(236, 232, 225, 0.9);
+
+  @media screen and (min-width: 882px) {
+    font-size: 50px;
+    line-height: calc(80 / 64);
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+  }
+}
+.guns__title-copy {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(60 / 48);
+  text-transform: uppercase;
+  width: fit-content;
+
+  color: rgba(236, 232, 225, 0.1);
+
+  @media screen and (min-width: 882px) {
+    font-size: 100px;
+    line-height: calc(163 / 130);
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 130px;
+  }
+}
+
+.agents__title-copy {
+}
+.guns__text-visible {
+}
+.guns__button {
+  @include button(var(--lightred), var(--transparent), var(--light));
+}
+
+.guns__text-hidden {
+  display: none;
+}
