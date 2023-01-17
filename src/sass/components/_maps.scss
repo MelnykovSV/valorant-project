@@ -22,16 +22,24 @@
   }
 }
 .maps__body {
+  padding-top: 7px;
+  padding-bottom: 188px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
   background: url('./../images/landing-maps-img.png'),
     linear-gradient(to bottom, var(--light) 113px, var(--light) 113px);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: bottom;
 
   @media screen and (min-width: 882px) {
+    padding-top: 120px;
+    padding-left: 113px;
+    padding-right: 113px;
     background: url('./../images/landing-maps-img.png'),
       linear-gradient(to bottom, var(--dark) 113px, var(--light) 113px);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     &::before {
       content: '';
@@ -44,9 +52,12 @@
     }
   }
   @media screen and (min-width: 1440px) {
+    padding-top: 152px;
+    padding-left: 140px;
+    padding-right: 140px;
     background: url('./../images/landing-maps-img.png'),
       linear-gradient(to bottom, var(--dark) 140px, var(--light) 140px);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     &::before {
       content: '';
@@ -60,14 +71,54 @@
   }
 }
 .maps__title-container {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  position: relative;
+  @media screen and (min-width: 882px) {
+    margin-left: 0;
+  }
 }
 .maps__title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  text-align: center;
+  color: var(--semidark);
+  width: fit-content;
 }
 .maps__title-copy {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(60 / 48);
+  width: fit-content;
+
+  color: rgba(24, 33, 42, 0.1);
 }
 .maps__text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: calc(16 / 13);
+  margin-bottom: 43px;
+  width: 258px;
+
+  color: var(--semidark);
 }
 .maps__text-subtitle {
+  text-transform: uppercase;
 }
 .maps__button {
+  @include button(var(--semidark), var(--transparent), var(--semidark));
+  padding: 13px 50px;
 }
