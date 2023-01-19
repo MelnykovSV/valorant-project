@@ -1,3 +1,225 @@
+.footer {
+  background-color: var(--light);
+}
+.footer__body {
+  padding-top: 10px;
+  @media screen and (min-width: 882px) {
+    background: url('./../images/landing-footer-bg.png');
+    background-size: cover;
+    background-position: right;
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 177px;
+  }
+}
+.container-new {
+}
+.footer__content {
+  position: relative;
+  background-color: var(--light);
+  display: flex;
+  padding-left: 7px;
+  padding-right: 7px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 301px;
+
+  @media screen and (min-width: 882px) {
+    flex-direction: column;
+    gap: 70px;
+    padding-bottom: 70px;
+
+    background-color: var(--transparent);
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 455px;
+    padding-bottom: 300px;
+  }
+}
+.footer__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+
+  @media screen and (min-width: 882px) {
+    width: 100%;
+    gap: 70px;
+  }
+}
+.footer__valorant {
+  @media screen and (min-width: 882px) {
+  }
+}
+.footer-valorant-logo {
+  fill: var(--red);
+  margin-bottom: 21px;
+
+  @media screen and (min-width: 882px) {
+    width: 190px;
+    height: 157px;
+    margin-bottom: 0;
+  }
+}
+.footer__valorant-text {
+  display: none;
+  font-family: 'VALORANT';
+  @media screen and (min-width: 882px) {
+    display: block;
+    text-align: center;
+    color: var(--red);
+    font-size: 35px;
+  }
+}
+.footer-rito-logo {
+  margin-bottom: 13px;
+  @media screen and (min-width: 882px) {
+    width: 228px;
+    height: 73px;
+  }
+}
+.rito-logo {
+}
+
+.footer__download {
+  display: none;
+  @media screen and (min-width: 882px) {
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    text-transform: uppercase;
+
+    color: var(--dark);
+    width: 100%;
+  }
+}
+.footer__socials-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.socials-list {
+}
+.socials-list__item {
+}
 .socials-list__icon {
   fill: var(--red);
+  @media screen and (min-width: 882px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 84px;
+  color: var(--lightred);
+  @media screen and (min-width: 882px) {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    bottom: 34px;
+  }
+}
+.footer_links-item {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @media screen and (min-width: 882px) {
+    font-size: 13px;
+    line-height: calc(23 / 18);
+    color: var(--semidark);
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
+.footer__link {
+}
+.footer_esrb-container {
+  display: flex;
+  align-items: flex-end;
+}
+.footer_esrb-image {
+  @media screen and (min-width: 882px) {
+    width: 65px;
+    height: 97px;
+  }
+}
+
+.footer__esrb-text {
+  display: none;
+  @media screen and (min-width: 882px) {
+    display: block;
+  }
+}
+.footer__esrb-text-item {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  color: var(--dark);
+}
+.footer__mobile-bg {
+  height: 492px;
+  background: url('./../images/landing-footer-bg-mob.png');
+  background-size: cover;
+
+  @media screen and (min-width: 882px) {
+    height: auto;
+    background: linear-gradien(to right, var(--dark) 50%, var(--dark) 50%);
+  }
+}
+.footer__copy {
+  background-color: var(--dark);
+  display: block;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 118.7%;
+  /* or 12px */
+
+  text-align: center;
+  color: var(--white);
+  padding-left: 42px;
+  padding-right: 42px;
+
+  @media screen and (min-width: 882px) {
+    width: 652px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+
+.footer-bg-container {
+  width: min(420px, 100%);
+  margin: 0 auto;
+
+  @media screen and (min-width: 882px) {
+    background-color: var(--dark);
+    width: min(882px, 100%);
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: min(1440px, 100%);
+  }
 }

@@ -2,10 +2,14 @@
   <div class="footer__body container-new">
     <div class="footer__content">
       <div class="footer__icons">
-        <svg class="footer-valorant-logo" width="50" height="42">
-          <use href="images/icons.svg#icon-valorant-logo"></use>
-        </svg>
-        <svg class="footer-rito-logo rito logo" width="89" height="29">
+        <div class="footer__valorant">
+
+          <svg class="footer-valorant-logo" width="50" height="42">
+            <use href="images/icons.svg#icon-valorant-logo"></use>
+          </svg>
+          <p class="footer__valorant-text">Valorant</p>
+        </div>
+        <svg class="footer-rito-logo rito-logo" width="89" height="29">
           <use href="images/icons.svg#icon-rito-logo"></use>
         </svg>
         <a href="#" class="footer__download">Download game client</a>
@@ -49,20 +53,34 @@
         </li>
       </ul>
       <div class="footer_esrb-container">
-        <picture>
+   
           <img
             class="footer_esrb-image"
             src="./images/esrb.svg"
             alt="esrb image"
+            width="26"
+            height="39"
           />
-        </picture>
+          <ul class="footer__esrb-text">
+            <li class="footer__esrb-text-item">Blood</li>
+            <li class="footer__esrb-text-item">Language</li>
+            <li class="footer__esrb-text-item">Violence</li>
+            <li class="footer__esrb-text-item">Users Interact</li>
+            <li class="footer__esrb-text-item">In-Game Purchases</li>
+          </ul>
+ 
       </div>
-      <div class="footer__mobile-bg"></div>
-      <small class="footer__copy"
-        >&#169 2021 Riot Games, Inc. Riot Games, VALORANT, and any associated logos
-        are trademarks, service marks, and/or registered trademarks of Riot
-        Games, Inc.</small
-      >
+      
     </div>
+    
+    
+  </div>
+  <div class="footer-bg-container">
+    <div class="footer__mobile-bg"></div>
+    <small class="footer__copy"
+      >&#169 2021 Riot Games, Inc. Riot Games, VALORANT, and any associated logos
+      are trademarks, service marks, and/or registered trademarks of Riot
+      Games, Inc.</small
+    >
   </div>
 </footer>
